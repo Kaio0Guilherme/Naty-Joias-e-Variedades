@@ -1,3 +1,9 @@
+// Teste básico de localStorage
+localStorage.setItem('teste', 'ok');
+console.log(localStorage.getItem('teste'));  // Deveria mostrar 'ok' no console
+
+
+
 // Função para adicionar produto ao carrinho
 function adicionarProduto(button) {
     const descricaoDiv = button.parentElement;
