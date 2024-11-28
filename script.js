@@ -6,13 +6,15 @@ console.log(localStorage.getItem('teste'));  // Deveria mostrar 'ok' no console
 
 // Função para adicionar produto ao carrinho
 function adicionarProduto(button) {
+    console.log("Função chamada");
     const descricaoDiv = button.parentElement;
     const nome = descricaoDiv.querySelector('h3').innerText;
-    const precoTexto = descricaoDiv.querySelector('.promocao').innerText; // "Promoção: R$ 1,00"
-    const preco = parseFloat(precoTexto.replace('Promoção: R$ ', '').replace(',', '.')); // Extração do preço
+    const precoTexto = descricaoDiv.querySelector('.promocao').innerText;
+    const preco = parseFloat(precoTexto.replace('Promoção: R$ ', '').replace(',', '.'));
 
     adicionarCarrinho(nome, preco);
 }
+
 
 // Função para adicionar ao carrinho
 function adicionarCarrinho(nome, preco) {
