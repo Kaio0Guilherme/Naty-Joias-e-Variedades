@@ -1,3 +1,6 @@
+document.addEventListener('DOMContentLoaded', carregarCarrinho);
+
+
 let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
 
 
