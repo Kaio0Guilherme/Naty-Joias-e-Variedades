@@ -2,7 +2,13 @@
 localStorage.setItem('teste', 'ok');
 console.log(localStorage.getItem('teste'));  // Deveria mostrar 'ok' no console
 
+const buttons = document.querySelectorAll('.botaoAdicionar'); // Certifique-se de que a classe está correta
 
+buttons.forEach(button => {
+    button.addEventListener('click', function() {
+        adicionarProduto(button);
+    });
+});
 
 // Função para adicionar produto ao carrinho
 function adicionarProduto(button) {
