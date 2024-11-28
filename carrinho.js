@@ -1,12 +1,9 @@
-document.addEventListener('DOMContentLoaded', carregarCarrinho);
-
-
 let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
-
 
 function atualizarCarrinho() {
     const carrinhoDiv = document.getElementById('itensCarrinhoList');
     carrinhoDiv.innerHTML = ''; // Limpa o conteúdo atual do carrinho
+
     carrinho.forEach((item, index) => {
         carrinhoDiv.innerHTML += `
             <div class="item-carrinho">
@@ -18,34 +15,27 @@ function atualizarCarrinho() {
         `;
     });
 
-    // Atualiza o total
-    const total = carrinho.reduce((total, item) => total + (item.preco * item.quantidade), 0);
+    const total = carrinho.reduce((acc, item) => acc + item.preco * item.quantidade, 0);
     document.getElementById('totalCarrinho').innerText = `Total: R$ ${total.toFixed(2)}`;
 }
 
-
-function alterarQuantidade(index, operacao) {
-    if (operacao === 'incrementar') {
+function alterarQuantidade(index, tipo) {
+    if (tipo === 'incrementar') {
         carrinho[index].quantidade++;
-    } else if (operacao === 'decrementar' && carrinho[index].quantidade > 1) {
+    } else if (tipo === 'decrementar' && carrinho[index].quantidade > 1) {
         carrinho[index].quantidade--;
     }
-    salvarCarrinho();
+
+    localStorage.setItem('carrinho', JSON.stringify(carrinho));
     atualizarCarrinho();
 }
 
 function removerItem(index) {
     carrinho.splice(index, 1); // Remove o item do carrinho
-    salvarCarrinho();
-    atualizarCarrinho();
-}
-
-function salvarCarrinho() {
     localStorage.setItem('carrinho', JSON.stringify(carrinho));
-}
-
-function carregarCarrinho() {
     atualizarCarrinho();
 }
 
-document.addEventListener('DOMContentLoaded', carregarCarrinho);
+document.addEventListener('DOMContentLoaded', function() {
+    atualizarCarrinho();
+});
