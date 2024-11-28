@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naty Jóias e Variedades</title>
+    <!-- Link para o CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link para o CSS personalizado -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Script JS do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="imagensSite/fundonaty.png" alt="Logo Naty Jóias e Variedades" style="height: 50px;">
+                    Naty Jóias e Variedades
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <button class="btn btn-warning btn-carrinho" onclick="window.location.href='carrinho.html'">Ver Carrinho</button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Correntes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pulseiras.html">Pulseiras</a></li>
+                        <li class="nav-item"><a class="nav-link" href="brincos.html">Brincos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="anel.html">Anel</a></li>
+                        
+                        <li class="nav-item"><a class="nav-link" href="cosmeticos.html">Cosméticos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pingente.html">Pingentes</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mensagem ao Adicionar Produto -->
+    <div id="toast" class="toast">
+        Produto adicionado ao carrinho com sucesso!
+    </div>
+
+    <!-- Seção de Produtos -->
+    <main>
+        <section id="correntes" class="categoria">
+            <h2>Anéis</h2>
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Anel fé Rommanel Tam 24.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <!--<div class="carousel-item">
+                            <img src="produto1-img2.jpg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="produto1-img3.jpg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>-->
+                    </div>
+                    <!-- Botões de navegação 
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>-->
+                </div>
+        
+                <div class="descricao">
+                    <h3>Anel Fé Rommanel Tam 24</h3>
+                    <p>O Anel Fé Rommanel Tam 24 é uma peça elegante e cheia de significado, perfeita para quem busca um acessório que una sofisticação e simbolismo. Com a palavra "Fé" delicadamente gravada, este anel transmite um toque de espiritualidade e confiança, sendo uma escolha ideal para quem deseja expressar sua fé de forma discreta e refinada.</p>
+                    <p class="preco">R$ 150,00</p>
+                    <p class="promocao">Promoção: R$ 135,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Anel cessi.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <!--<div class="carousel-item">
+                            <img src="produto1-img2.jpg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="produto1-img3.jpg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>-->
+                    </div>
+                    <!-- Botões de navegação 
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>-->
+                </div>
+        
+                <div class="descricao">
+                    <h3>Anel Cessi</h3>
+                    <p>O Anel Cessi é uma peça sofisticada e moderna, que combina design elegante e detalhes únicos para criar um acessório que se destaca de maneira discreta e cheia de charme. Com um formato delicado e acabamento refinado, o anel é perfeito para quem busca adicionar um toque de sofisticação ao visual, seja em ocasiões especiais ou no uso diário.</p>
+                    <p class="preco">R$ 50,00</p>
+                    <p class="promocao">Promoção: R$ 35,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            
+
+
+        </section>
+        <!-- Outras Categorias Aqui -->
+    </main>
+
+    <!-- Imagem Expandidas -->
+    <div id="imagemExpandida" class="expanded-img" onclick="fecharImagem()">
+        <button class="close-btn" onclick="fecharImagem()">X</button>
+        <img id="imgExpandida" src="" alt="Imagem Expandida">
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Naty Jóias e Variedades</p>
+    </footer>
+</body>
+</html>

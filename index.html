@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naty Jóias e Variedades</title>
+    <!-- Link para o CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link para o CSS personalizado -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Script JS do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="imagensSite/fundonaty.png" alt="Logo Naty Jóias e Variedades" style="height: 50px;">
+                    Naty Jóias e Variedades
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <button class="btn btn-warning btn-carrinho" onclick="window.location.href='carrinho.html'">Ver Carrinho</button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Correntes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pulseiras.html">Pulseiras</a></li>
+                        <li class="nav-item"><a class="nav-link" href="brincos.html">Brincos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="anel.html">Anel</a></li>
+                        
+                        <li class="nav-item"><a class="nav-link" href="cosmeticos.html">Cosméticos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pingente.html">Pingentes</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mensagem ao Adicionar Produto -->
+    <div id="toast" class="toast">
+        Produto adicionado ao carrinho com sucesso!
+    </div>
+    
+
+    <!-- Seção de Produtos -->
+    <main>
+        <section id="correntes" class="categoria">
+            <h2>Correntes e Colares</h2>
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Colar + pingente coração.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Colar + pingente coração 2.jpeg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Colar + pingente coração 3.jpeg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>
+                    </div>
+                    <!-- Botões de navegação -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        
+                <div class="descricao">
+                    <h3>Colar + Pingente coração</h3>
+                    <p>O Colar com Pingente de Coração é uma peça delicada e cheia de significado, perfeita para expressar amor e carinho com sofisticação. O colar, com corrente fina e elegante, é acompanhado por um pingente em formato de coração, que destaca a beleza clássica e romântica do acessório.</p>
+                    <p class="preco">R$ 150,00</p>
+                    <p class="promocao">Promoção: R$ 135,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Colar Alabhama amarelo.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Colar Alabhama amarelo 2.jpeg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Colar Alabhama amarelo 3.jpeg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>
+                    </div>
+                    <!-- Botões de navegação -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        
+                <div class="descricao">
+                    <h3>Colar Alabhama Amarelo</h3>
+                    <p>O Colar Alabama Amarelo é uma peça vibrante e sofisticada que traz um toque de alegria e estilo ao seu visual. Com um design moderno, este colar combina a elegância de seus materiais com a cor amarela, que simboliza energia e vitalidade, tornando-o perfeito para destacar sua personalidade em qualquer ocasião.</p>
+                    <p class="preco">R$ 50,00</p>
+                    <p class="promocao">Promoção: R$ 35,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>    
+
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls3" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Colar amor.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Colar amor 2.jpeg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Colar amor 3.jpeg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>
+                    </div>
+                    <!-- Botões de navegação -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        
+                <div class="descricao">
+                    <h3>Colar Amor</h3>
+                    <p>O Colar Amor é uma peça delicada e repleta de significado, ideal para quem deseja expressar sentimentos de carinho e afeto com sofisticação. O design elegante, com a palavra "Amor" em destaque, traz um toque romântico e atemporal, tornando o colar uma escolha perfeita para presentear ou complementar seu estilo com uma mensagem especial.</p>
+                    <p class="preco">R$ 150,00</p>
+                    <p class="promocao">Promoção: R$ 124,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls4" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Colar maziazul.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Colar maziazul 2.jpeg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Colar maziazul 3.jpeg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>
+                    </div>
+                    <!-- Botões de navegação -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        
+                <div class="descricao">
+                    <h3>Colar Maziazul</h3>
+                    <p>O Colar Maziazul é uma peça sofisticada e encantadora, perfeita para quem deseja adicionar um toque de cor e elegância ao visual. Com detalhes em tons de azul que remetem à serenidade e ao frescor, o colar se destaca pelo design moderno e versátil, ideal para diversas ocasiões.</p>
+                    <p class="preco">R$ 30,00</p>
+                    <p class="promocao">Promoção: R$ 20,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            
+
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls5" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Colar de pérola sintética alongado.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Colar de pérola sintética alongado 2.jpeg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Colar de pérola sintética alongado 3.jpeg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>
+                    </div>
+                    <!-- Botões de navegação -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls5" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls5" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        
+                <div class="descricao">
+                    <h3>Colar de Pérola Sintética Alongado</h3>
+                    <p>O Colar de Pérola Sintética Alongado é a personificação da elegância clássica com um toque moderno. Com pérolas sintéticas de alta qualidade dispostas ao longo de uma corrente alongada, este colar oferece sofisticação e versatilidade, sendo ideal para compor looks refinados e estilosos.</p>
+                    <p class="preco">R$ 35,00</p>
+                    <p class="promocao">Promoção: R$ 28,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls6" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Colar de pérolas sintética.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Colar de pérolas sintética 2.jpeg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Colar de pérolas sintética 3.jpeg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>
+                    </div>
+                    <!-- Botões de navegação -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls6" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls6" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        
+                <div class="descricao">
+                    <h3>Colar de Pérola Sintética</h3>
+                    <p>O Colar de Pérola Sintética é a escolha perfeita para quem busca um visual elegante e sofisticado com um toque de delicadeza. Este colar é composto por pérolas sintéticas de alta qualidade, que replicam a beleza e o brilho das pérolas naturais, oferecendo um charme clássico e atemporal.</p>
+                    <p class="preco">R$ 20,00</p>
+                    <p class="promocao">Promoção: R$ 12,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls7" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Colar fé.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Colar fé 2.jpeg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Colar fé 3.jpeg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>
+                    </div>
+                    <!-- Botões de navegação -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls7" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls7" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        
+                <div class="descricao">
+                    <h3>Colar Fé</h3>
+                    <p>O Colar Fé é uma peça delicada e cheia de significado, ideal para quem deseja expressar sua crença e espiritualidade com sofisticação. Com o símbolo da palavra "Fé" em destaque, este colar traz um toque de inspiração e propósito, sendo perfeito para usar no dia a dia ou em ocasiões especiais.</p>
+                    <p class="preco">R$ 135,00</p>
+                    <p class="promocao">Promoção: R$ 120,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls8" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Colar ponto de luz Rommanel.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Colar ponto de luz Rommanel 2.jpeg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Colar ponto de luz Rommanel 3.jpeg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>
+                    </div>
+                    <!-- Botões de navegação -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls8" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls8" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        
+                <div class="descricao">
+                    <h3>Colar Ponto de Luz Rommanel</h3>
+                    <p>O Colar Ponto de Luz Rommanel é a peça perfeita para quem busca delicadeza e sofisticação em um acessório. Com um design minimalista e elegante, o ponto de luz é a estrela deste colar, destacando-se com seu brilho suave e encantador. Ideal para compor looks tanto para o dia a dia quanto para ocasiões especiais, esse colar transmite uma elegância sutil e atemporal.</p>
+                    <p class="preco">R$ 203,00</p>
+                    <p class="promocao">Promoção: R$ 168,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            
+            
+
+
+
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls9" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Colar diamont.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Colar diamont 2.jpeg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Colar diamont 3.jpeg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>
+                    </div>
+                    <!-- Botões de navegação -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls9" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls9" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        
+                <div class="descricao">
+                    <h3>Colar Diamont</h3>
+                    <p>O Colar Diamont é a escolha ideal para quem busca brilho e sofisticação em um único acessório. Com um design elegante, este colar apresenta detalhes em pedras que simulam diamantes, proporcionando um efeito luminoso e encantador. Sua beleza atemporal o torna perfeito para ocasiões especiais ou para adicionar um toque de glamour ao dia a dia.</p>
+                    <p class="preco">R$ 175,00</p>
+                    <p class="promocao">Promoção: R$ 165,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            
+
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls10" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Colar folhagem.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Colar folhagem 2.jpeg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Colar folhagem 3.jpeg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>
+                    </div>
+                    <!-- Botões de navegação -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls10" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls10" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        
+                <div class="descricao">
+                    <h3>Colar Folhagem</h3>
+                    <p>O Colar Folhagem é uma peça delicada e cheia de estilo, inspirada na beleza natural das folhas. Com um design elegante e detalhes meticulosamente trabalhados, este colar traz um toque de frescor e sofisticação ao seu visual. Ideal para quem aprecia acessórios que refletem a natureza e a simplicidade, o Colar Folhagem é uma opção versátil e atemporal.</p>
+                    <p class="preco">R$ 175,00</p>
+                    <p class="promocao">Promoção: R$ 165,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+           
+
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls11" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Colar primavera.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Colar primavera 2.jpeg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Colar primavera 3.jpeg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>
+                    </div>
+                    <!-- Botões de navegação -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls11" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls11" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        
+                <div class="descricao">
+                    <h3>Colar Primavera</h3>
+                    <p>O Colar Primavera é uma peça vibrante e delicada, inspirada na estação das flores e da renovação. Com um design floral e elegante, este colar traz a leveza e a frescura da primavera para o seu visual, adicionando um toque de sofisticação e charme ao seu estilo.</p>
+                    <p class="preco">R$ 78,00</p>
+                    <p class="promocao">Promoção: R$ 40,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            
+
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls12" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Colarde  letra B.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Colarde  letra B 2.jpeg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Colarde  letra B 3.jpeg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>
+                    </div>
+                    <!-- Botões de navegação -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls12" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls12" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        
+                <div class="descricao">
+                    <h3>Colar Letra B</h3>
+                    <p>O Colar Letra B é uma peça personalizada e cheia de estilo, ideal para quem deseja adicionar um toque único e individual ao seu visual. Com a letra "B" em destaque, este colar traz um toque de personalidade, sendo perfeito para quem busca um acessório que reflita sua identidade ou até mesmo para presentear alguém especial com a inicial de seu nome.</p>
+                    <p class="preco">R$ 175,00</p>
+                    <p class="promocao">Promoção: R$ 165,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls13" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Colar coração cravejado.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Colar coração cravejado 2.jpeg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Colar coração cravejado 3.jpeg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>
+                    </div>
+                    <!-- Botões de navegação -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls13" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls13" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        
+                <div class="descricao">
+                    <h3>Colar Coração Cravejado</h3>
+                    <p>O Colar Coração Cravejado é uma peça encantadora que traz um toque de romance e sofisticação ao seu visual. Com um design delicado e o formato clássico de coração, este colar é cravejado com pedras brilhantes, criando um efeito luminoso e elegante que encanta todos os olhares.</p>
+                    <p class="preco">R$ 198,00</p>
+                    <p class="promocao">Promoção: R$ 135,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+        </section>
+        <!-- Outras Categorias Aqui -->
+    </main>
+
+    <!-- Imagem Expandidas -->
+    <div id="imagemExpandida" class="expanded-img" onclick="fecharImagem()">
+        <button class="close-btn" onclick="fecharImagem()">X</button>
+        <img id="imgExpandida" src="" alt="Imagem Expandida">
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Naty Jóias e Variedades</p>
+    </footer>
+</body>
+</html>

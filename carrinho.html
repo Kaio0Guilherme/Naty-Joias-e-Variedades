@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="carrinho.js" defer></script>
+</head>
+<body>
+    <header>
+        <a class="navbar-brand" href="index.html">
+            <img src="imagensSite/fundonaty.png" alt="Logo Naty Jóias e Variedades" style="height: 50px;">
+        </a>
+        <h1>Carrinho de Compras</h1>
+        <button class="btn-carrinho" onclick="window.location.href = 'compra.html';">Finalizar Compra</button>
+    </header>
+
+    <main>
+        <section class="carrinho-container">
+            <h2>Seus Produtos</h2>
+            <div id="itensCarrinhoList" class="itens-carrinho"></div>
+            <div class="carrinho-resumo">
+                <p id="totalCarrinho" class="total-carrinho"></p>
+                <button class="btn-voltar" onclick="window.location.href = 'index.html';">Continuar Comprando</button>
+                <button class="btn-carrinho" onclick="window.location.href = 'compra.html';">Finalizar Compra</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Naty Jóias e Variedades</p>
+    </footer>
+</body>
+</html>

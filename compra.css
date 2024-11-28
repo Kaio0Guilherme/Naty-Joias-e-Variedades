@@ -1,0 +1,181 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo geral */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #8f282c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Conteúdo principal */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Estilo para a seção de itens comprados */
+#itensComprados {
+    flex: 1;
+    min-width: 300px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#itensComprados h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#listaItens {
+    list-style: none;
+    padding: 0;
+}
+
+#listaItens li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Estilo para o formulário */
+#formCompra {
+    flex: 2;
+    min-width: 300px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#formCompra h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#formCompra label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#formCompra input, #formCompra select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#formCompra button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#formCompra button:hover {
+    background-color: #45a049;
+}
+
+/* Botões adicionais */
+button.btn-voltar {
+    background-color: #8f282c;
+    color: white;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.btn-voltar:hover {
+    background-color: #e33b3f;
+}
+
+/* Parcelas e cartões */
+#parcelas, #cartaoCredito {
+    margin-top: 10px;
+}
+
+#parcelas input, #cartaoCredito input {
+    width: calc(100% - 20px);
+}
+
+/* Campo de Frete */
+#frete {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    text-align: right;
+    color: #555;
+}
+
+/* Total da compra */
+#totalCompra {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+}
+
+
+/* Estilo para a logo no cabeçalho */
+header .navbar-brand img {
+    display: block;
+    max-height: 50px;
+    margin: 0 auto;
+}
+
+/* Ajuste do layout no cabeçalho com a logo */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Para telas menores, esconder a logo */
+@media screen and (max-width: 768px) {
+    header .navbar-brand img {
+        display: none;
+    }
+}

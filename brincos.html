@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naty Jóias e Variedades</title>
+    <!-- Link para o CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link para o CSS personalizado -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Script JS do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="imagensSite/fundonaty.png" alt="Logo Naty Jóias e Variedades" style="height: 50px;">
+                    Naty Jóias e Variedades
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <button class="btn btn-warning btn-carrinho" onclick="window.location.href='carrinho.html'">Ver Carrinho</button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Correntes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pulseiras.html">Pulseiras</a></li>
+                        <li class="nav-item"><a class="nav-link" href="brincos.html">Brincos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="anel.html">Anel</a></li>
+                        
+                        <li class="nav-item"><a class="nav-link" href="cosmeticos.html">Cosméticos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pingente.html">Pingentes</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mensagem ao Adicionar Produto -->
+    <div id="toast" class="toast">
+        Produto adicionado ao carrinho com sucesso!
+    </div>
+
+    <!-- Seção de Produtos -->
+    <main>
+        <section id="correntes" class="categoria">
+            <h2>Brincos</h2>
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Brinco Catarina biju.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Brinco Catarina biju 2.jpeg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Brinco Catarina biju 3.jpeg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>
+                    </div>
+                    <!-- Botões de navegação -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        
+                <div class="descricao">
+                    <h3>Brinco Catarina Biju</h3>
+                    <p>O Brinco Catarina Biju é uma peça sofisticada e elegante, perfeita para quem busca um acessório moderno e cheio de charme. Com um design exclusivo, este brinco combina beleza e versatilidade, tornando-se ideal para complementar looks casuais ou mais elaborados, em diversas ocasiões.</p>
+                    <p class="preco">R$ 150,00</p>
+                    <p class="promocao">Promoção: R$ 135,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Argola melissa.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Argola melissa 2.jpeg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Argola melissa 3.jpeg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>
+                    </div>
+                    <!-- Botões de navegação -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        
+                <div class="descricao">
+                    <h3>Argola Melissa</h3>
+                    <p>A Argola Melissa é um acessório clássico e elegante, perfeito para quem deseja adicionar um toque de sofisticação ao visual. Com seu design atemporal e elegante, essa argola combina facilmente com diferentes estilos, sendo ideal tanto para o dia a dia quanto para eventos especiais.</p>
+                    <p class="preco">R$ 50,00</p>
+                    <p class="promocao">Promoção: R$ 35,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls3" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Argola melissa rosa choque.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Argola melissa rosa choque 2.jpeg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Argola melissa rosa choque 3.jpeg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>
+                    </div>
+                    <!-- Botões de navegação -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        
+                <div class="descricao">
+                    <h3>Argola Melissa Rosa Choque</h3>
+                    <p>A Argola Melissa Rosa Choque é uma peça ousada e vibrante, que traz um toque de cor e modernidade ao seu estilo. Com um design clássico de argola, esta versão em rosa choque é perfeita para quem deseja se destacar e adicionar personalidade ao visual. Sua tonalidade intensa e marcante combina perfeitamente com looks casuais e sofisticados, dando um toque de frescor e energia ao seu look.</p>
+                    <p class="preco">R$ 50,00</p>
+                    <p class="promocao">Promoção: R$ 35,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls4" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Argola melissa tumbré.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Argola melissa tumbré 2.jpeg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Argola melissa tumbré 3.jpeg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>
+                    </div>
+                    <!-- Botões de navegação -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        
+                <div class="descricao">
+                    <h3>Argola Melissa Tumbré</h3>
+                    <p>A Argola Melissa Tumbré é a combinação perfeita de modernidade e sofisticação. Com um design inspirado nas tendências contemporâneas, essa peça traz curvas suaves e elegantes, valorizando o rosto de maneira discreta e encantadora.</p>
+                    <p class="preco">R$ 50,00</p>
+                    <p class="promocao">Promoção: R$ 35,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls5" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Brinco arimetrico.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Brinco arimetrico 2.jpeg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Brinco arimetrico 3.jpeg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>
+                    </div>
+                    <!-- Botões de navegação -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls5" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls5" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        
+                <div class="descricao">
+                    <h3>Brinco Arimétrico</h3>
+                    <p>O Brinco Arimétrico é uma peça única e moderna, que mistura formas e linhas para criar um design ousado e cheio de estilo. Com um conceito arrojado e assimétrico, este brinco se destaca por sua originalidade e por agregar um toque contemporâneo ao visual. Ideal para quem busca um acessório que chame a atenção de maneira sofisticada e criativa, o Brinco Arimétrico é perfeito para adicionar personalidade a qualquer look.</p>
+                    <p class="preco">R$ 50,00</p>
+                    <p class="promocao">Promoção: R$ 35,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            
+
+
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls7" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Brinco flores.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Brinco flores 2.jpeg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Brinco flores 3.jpeg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>
+                    </div>
+                    <!-- Botões de navegação -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls7" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls7" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        
+                <div class="descricao">
+                    <h3>Brinco Flores</h3>
+                    <p>O Brinco Flores é uma peça delicada e encantadora, inspirada na beleza das flores e na natureza. Com um design floral elegante e detalhes sutis, este brinco traz um toque de frescor e feminilidade ao visual, sendo perfeito para quem deseja adicionar um charme suave e sofisticado ao seu look.</p>
+                    <p class="preco">R$ 50,00</p>
+                    <p class="promocao">Promoção: R$ 35,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls8" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Argola média.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Argola média 2.jpeg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Argola média 3.jpeg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>
+                    </div>
+                    <!-- Botões de navegação -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls8" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls8" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        
+                <div class="descricao">
+                    <h3>Argola Média</h3>
+                    <p>A Argola Média é um clássico atemporal, ideal para quem busca um acessório versátil que se adapta facilmente a qualquer estilo. Com um tamanho intermediário, nem muito grande nem muito pequena, essa argola é perfeita para adicionar um toque de sofisticação e equilíbrio ao visual, podendo ser usada tanto no dia a dia quanto em ocasiões especiais.</p>
+                    <p class="preco">R$ 189,00</p>
+                    <p class="promocao">Promoção: R$ 148,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls9" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Argola p Alabhama.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Argola p Alabhama 2.jpeg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Argola p Alabhama 3.jpeg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>
+                    </div>
+                    <!-- Botões de navegação -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls9" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls9" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        
+                <div class="descricao">
+                    <h3>Argola Alabhama P</h3>
+                    <p>A Argola Alabama P é um acessório clássico e versátil que complementa qualquer look com um toque de elegância e modernidade. Com um design minimalista e tamanho pequeno, é perfeita para quem valoriza discrição sem abrir mão do estilo.</p>
+                    <p class="preco">R$ 89,00</p>
+                    <p class="promocao">Promoção: R$ 48,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls10" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Argola Alabhama G.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Argola Alabhama G 2.jpeg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Argola Alabhama G 3.jpeg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>
+                    </div>
+                    <!-- Botões de navegação -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls10" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls10" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        
+                <div class="descricao">
+                    <h3>Argola Alabhama G</h3>
+                    <p>A Argola Alabhama G é uma peça sofisticada e ousada, ideal para quem busca um acessório elegante e imponente. Com seu design volumoso e formato clássico de argola, essa peça se destaca pelo tamanho maior, criando um visual marcante e cheio de personalidade. Perfeita para quem deseja adicionar um toque de estilo e sofisticação ao seu look, a Argola Alabhama G é ideal para ocasiões especiais ou para transformar looks do dia a dia em produções mais sofisticadas.</p>
+                    <p class="preco">R$ 50,00</p>
+                    <p class="promocao">Promoção: R$ 35,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls11" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Brinco coração.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <!--<div class="carousel-item">
+                            <img src="imagensSite/Brinco coração 2.jpeg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Brinco coração 3.jpeg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>-->
+                    </div>
+                    <!-- Botões de navegação 
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls11" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls11" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>-->
+                </div>
+        
+                <div class="descricao">
+                    <h3>Brinco Coração</h3>
+                    <p>O Brinco Coração é uma peça delicada e romântica, ideal para expressar carinho e sofisticação de maneira sutil. Com seu design simples, mas encantador, o brinco em formato de coração é perfeito para quem deseja adicionar um toque de feminilidade e charme ao visual, seja no dia a dia ou em ocasiões especiais.</p>
+                    <p class="preco">R$ 50,00</p>
+                    <p class="promocao">Promoção: R$ 35,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls12" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Brinco flores tropicais.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Brinco flores tropicais 2.jpeg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Brinco flores tropicais 3.jpeg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>
+                    </div>
+                    <!-- Botões de navegação -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls12" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls12" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        
+                <div class="descricao">
+                    <h3>Brinco Flores Tropicais</h3>
+                    <p>O Brinco Flores Tropicais é uma peça vibrante e cheia de personalidade, inspirada nas cores e formas exuberantes da natureza tropical. Com um design florido e delicado, ele traz um toque alegre e fresh ao seu visual, sendo perfeito para quem busca um acessório que exala estilo e sofisticação ao mesmo tempo.</p>
+                    <p class="preco">R$ 108,00</p>
+                    <p class="promocao">Promoção: R$ 75,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls13" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Argola estrelas.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Argola estrelas 2.jpeg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Argola estrelas 3.jpeg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>
+                    </div>
+                    <!-- Botões de navegação -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls13" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls13" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        
+                <div class="descricao">
+                    <h3>Argola Estrelas</h3>
+                    <p>A Argola Estrelas é uma peça encantadora que combina o charme clássico das argolas com um toque celestial e moderno. Com detalhes de estrelas delicadamente trabalhadas ao longo da argola, essa peça traz um brilho especial e um estilo único, ideal para quem deseja adicionar um toque de glamour ao visual.</p>
+                    <p class="preco">R$ 134,00</p>
+                    <p class="promocao">Promoção: R$ 104,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls14" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Kit brincos corações Rommanel.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Kit brincos corações Rommanel 2.jpeg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Kit brincos corações Rommanel 3.jpeg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>
+                    </div>
+                    <!-- Botões de navegação -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls14" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls14" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        
+                <div class="descricao">
+                    <h3>Kit Brincos Corações Rommanel</h3>
+                    <p>O Kit Brincos Corações Rommanel é a escolha perfeita para quem deseja um toque de romance e sofisticação no visual. Composto por dois pares de brincos delicadamente trabalhados em formato de coração, este kit traz a combinação ideal de elegância e estilo, sendo perfeito para diferentes ocasiões.</p>
+                    <p class="preco">R$ 124,00</p>
+                    <p class="promocao">Promoção: R$ 98,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls15" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Brinco Alabhama.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <!--<div class="carousel-item">
+                            <img src="imagensSite/Brinco Alabhama 2.jpeg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Brinco Alabhama 3.jpeg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>-->
+                    </div>
+                    <!-- Botões de navegação 
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls15" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls15" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>-->
+                </div>
+        
+                <div class="descricao">
+                    <h3>Brinco Alabhama</h3>
+                    <p>O Brinco Alabhama é uma peça elegante e sofisticada, projetada para quem busca um acessório moderno e cheio de personalidade. Com um design exclusivo e detalhes que agregam brilho e leveza, este brinco traz um toque contemporâneo e refinado ao seu visual.</p>
+                    <p class="preco">R$ 89,00</p>
+                    <p class="promocao">Promoção: R$ 48,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls16" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Brinco Atlanta.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <!--<div class="carousel-item">
+                            <img src="imagensSite/Brinco Atlanta 2.jpeg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Brinco Atlanta 3.jpeg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>-->
+                    </div>
+                    <!-- Botões de navegação 
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls16" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls16" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>-->
+                </div>
+        
+                <div class="descricao">
+                    <h3>Brinco Atlanta</h3>
+                    <p>O Brinco Atlanta é uma peça moderna e sofisticada, ideal para quem busca um acessório elegante e cheio de estilo. Com um design geométrico e contemporâneo, este brinco traz um toque de sofisticação e sofisticação ao seu visual. Seu formato inovador e detalhes refinados fazem dele a escolha perfeita para quem deseja se destacar com um visual moderno e distinto.</p>
+                    <p class="preco">R$ 50,00</p>
+                    <p class="promocao">Promoção: R$ 35,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls17" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Argola dois corações.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Argola dois corações 2.jpeg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Argola dois corações 3.jpeg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>
+                    </div>
+                    <!-- Botões de navegação -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls17" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls17" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        
+                <div class="descricao">
+                    <h3>Argola Dois Corações</h3>
+                    <p>A Argola Dois Corações é uma peça charmosa e romântica, ideal para quem deseja adicionar um toque de amor e sofisticação ao visual. Com um design delicado e moderno, essa argola apresenta dois corações entrelaçados, criando um efeito encantador e cheio de significado.</p>
+                    <p class="preco">R$ 50,00</p>
+                    <p class="promocao">Promoção: R$ 35,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls18" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Brincos botões Brancos.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <!--<div class="carousel-item">
+                            <img src="imagensSite/Brincos botões Brancos 2.jpeg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Brincos botões Brancos 3.jpeg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>-->
+                    </div>
+                    <!-- Botões de navegação 
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls18" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls18" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>-->
+                </div>
+        
+                <div class="descricao">
+                    <h3>Brincos Botões Branco</h3>
+                    <p>Os Brincos Botões Brancos são a definição de elegância minimalista. Com um design inspirado na pureza e delicadeza das flores, esses brincos trazem o formato de botões em branco impecável, simbolizando sofisticação e versatilidade.</p>
+                    <p class="preco">R$ 18,00</p>
+                    <p class="promocao">Promoção: R$ 12,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls19" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Bricos Botões Rosa.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <!--<div class="carousel-item">
+                            <img src="imagensSite/Bricos Botões Rosa 2.jpeg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Bricos Botões Rosa 3.jpeg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>-->
+                    </div>
+                    <!-- Botões de navegação 
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls19" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls19" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>-->
+                </div>
+        
+                <div class="descricao">
+                    <h3>Brincos Botões Rosa</h3>
+                    <p>Os Brincos Botões Rosa são a escolha perfeita para quem busca um acessório delicado e cheio de charme. Inspirados na suavidade das flores, estes brincos trazem o formato de botões de rosa, simbolizando elegância, romantismo e feminilidade.</p>
+                    <p class="preco">R$ 18,00</p>
+                    <p class="promocao">Promoção: R$ 12,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls20" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Argola Rommanel.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Argola Rommanel 2.jpeg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Argola Rommanel 3.jpeg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>
+                    </div>
+                    <!-- Botões de navegação -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls20" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls20" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        
+                <div class="descricao">
+                    <h3>Argola Rommanel</h3>
+                    <p>A Argola Rommanel é um acessório clássico e elegante, ideal para quem busca uma peça sofisticada que combine com qualquer estilo. Com seu design atemporal e acabamento refinado, a argola traz um toque de sofisticação e versatilidade, sendo perfeita tanto para o uso diário quanto para eventos especiais.</p>
+                    <p class="preco">R$ 132,00</p>
+                    <p class="promocao">Promoção: R$ 99,90</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls21" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Brinco coração em prata.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <!--<div class="carousel-item">
+                            <img src="imagensSite/Brinco coração em prata 2.jpeg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Brinco coração em prata 3.jpeg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>-->
+                    </div>
+                    <!-- Botões de navegação 
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls21" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls21" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>-->
+                </div>
+        
+                <div class="descricao">
+                    <h3>Brinco Coração em Prata</h3>
+                    <p>O Brinco Coração em Prata 925 é uma peça delicada e encantadora, ideal para simbolizar amor e carinho em seu visual. Com um design clássico em formato de coração, este brinco é perfeito para quem aprecia acessórios elegantes e versáteis que podem ser usados tanto no dia a dia quanto em ocasiões especiais.</p>
+                    <p class="preco">R$ 112,00</p>
+                    <p class="promocao">Promoção: R$ 75,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls22" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Brinco amor em prata 925.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <!--<div class="carousel-item">
+                            <img src="imagensSite/Brinco amor em prata 925 2.jpeg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Brinco amor em prata 925 3.jpeg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>-->
+                    </div>
+                    <!-- Botões de navegação 
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls22" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls22" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>-->
+                </div>
+        
+                <div class="descricao">
+                    <h3>Brinco Amor em Prata 925</h3>
+                    <p>O Brinco Amor em Prata 925 é uma peça delicada e cheia de significado, ideal para expressar sentimentos profundos de uma maneira sutil e elegante. Com um design inspirado na palavra "amor", o brinco transmite uma mensagem de carinho e afeto, sendo perfeito para quem deseja um toque romântico no visual.</p>
+                    <p class="preco">R$ 98,00</p>
+                    <p class="promocao">Promoção: R$ 58,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls23" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Argola média Rommanel.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Argola média Rommanel 2.jpeg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Argola média Rommanel 3.jpeg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>
+                    </div>
+                    <!-- Botões de navegação -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls23" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls23" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        
+                <div class="descricao">
+                    <h3>Argola Média Rommanel</h3>
+                    <p>A Argola Média Rommanel é uma peça elegante e sofisticada, com o tamanho ideal para quem busca um acessório versátil e atemporal. Seu design clássico e acabamento refinado garantem que ela seja perfeita para complementar qualquer look, seja no dia a dia ou em ocasiões especiais.
+
+                        Feita com a qualidade reconhecida da Rommanel, a Argola Média Rommanel é confeccionada com materiais duráveis e oferece brilho e resistência, mantendo sua beleza por muito tempo. Seu tamanho médio é perfeito para quem deseja uma argola discreta, mas ao mesmo tempo marcante, que combina com diferentes estilos e proporciona um toque de sofisticação ao visual.</p>
+                    <p class="preco">R$ 189,00</p>
+                    <p class="promocao">Promoção: R$ 148,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls24" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Argola Rommanel amor.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Argola Rommanel amor 2.jpeg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Argola Rommanel amor 3.jpeg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>
+                    </div>
+                    <!-- Botões de navegação -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls24" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls24" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        
+                <div class="descricao">
+                    <h3>Argola Rommanel Amor</h3>
+                    <p>A Argola Rommanel Amor é a definição de delicadeza e romantismo. Com um design exclusivo, ela simboliza o amor em cada detalhe, sendo perfeita para quem deseja carregar esse sentimento consigo de forma sutil e elegante.</p>
+                    <p class="preco">R$ 128,00</p>
+                    <p class="promocao">Promoção: R$ 98,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls25" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Argola gota vazada.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Argola gota vazada 2.jpeg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Argola gota vazada 3.jpeg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>
+                    </div>
+                    <!-- Botões de navegação -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls25" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls25" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        
+                <div class="descricao">
+                    <h3>Argola Gota Vazada</h3>
+                    <p>A Argola Gota Vazada é uma peça moderna e sofisticada, que traz um toque de ousadia e elegância ao seu visual. Seu design em forma de gota, com o detalhe vazado, cria um efeito visual único, adicionando leveza e movimento ao acessório.</p>
+                    <p class="preco">R$ 118,00</p>
+                    <p class="promocao">Promoção: R$ 78,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls26" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Brinco Rommanel.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Brinco Rommanel 2.jpeg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Brinco Rommanel 3.jpeg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>
+                    </div>
+                    <!-- Botões de navegação -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls26" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls26" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        
+                <div class="descricao">
+                    <h3>Brinco Rommanel</h3>
+                    <p>O Brinco Rommanel é um acessório que une sofisticação, qualidade e beleza atemporal. Reconhecida por suas peças exclusivas e cuidadosamente elaboradas, a Rommanel oferece brincos que valorizam seu estilo e acompanham qualquer ocasião, do dia a dia aos momentos mais especiais.
+
+                        Produzidos com materiais hipoalergênicos e um acabamento impecável, os brincos Rommanel estão disponíveis em uma ampla variedade de designs: desde opções minimalistas e delicadas, como pontos de luz, até peças mais elaboradas com detalhes cravejados e formatos únicos.</p>
+                    <p class="preco">R$ 122,00</p>
+                    <p class="promocao">Promoção: R$ 99,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls27" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Argola escamas.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Argola escamas 2.jpeg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Argola escamas 3.jpeg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>
+                    </div>
+                    <!-- Botões de navegação -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls27" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls27" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        
+                <div class="descricao">
+                    <h3>Argola Escamas</h3>
+                    <p>O Brinco Argola Escamas é uma peça ousada e sofisticada, ideal para quem busca um acessório com personalidade. Inspirado na beleza e textura das escamas, o design detalhado combina elementos modernos e naturais, criando um visual único e marcante.
+
+                        Perfeito para compor looks contemporâneos ou dar um toque especial ao estilo casual, este brinco é leve e confortável, além de possuir acabamento impecável que destaca cada detalhe das escamas em relevo.</p>
+                    <p class="preco">R$ 96,00</p>
+                    <p class="promocao">Promoção: R$ 54,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls28" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Brinco meia lua.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Brinco meia lua 2.jpeg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Brinco meia lua 3.jpeg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>
+                    </div>
+                    <!-- Botões de navegação -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls28" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls28" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        
+                <div class="descricao">
+                    <h3>Brinco Meia Lua</h3>
+                    <p>O Brinco Meia Lua é um acessório moderno e cheio de estilo, perfeito para quem deseja um toque único e contemporâneo no visual. Inspirado na beleza celestial, o design em formato de meia-lua simboliza renovação e equilíbrio, tornando-se uma peça que vai além da moda e carrega significado.
+
+                        Feito com materiais de alta qualidade e acabamento impecável, o Brinco Meia Lua é leve e confortável, ideal para ser usado em diversas ocasiões, desde eventos casuais até combinações mais ousadas.</p>
+                    <p class="preco">R$ 76,00</p>
+                    <p class="promocao">Promoção: R$ 46,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls29" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Brinco gota vesma.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Brinco gota vesma 2.jpeg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Brinco gota vesma 3.jpeg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>
+                    </div>
+                    <!-- Botões de navegação -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls29" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls29" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        
+                <div class="descricao">
+                    <h3>Brinco Gota Vesma</h3>
+                    <p>O Brinco Gota Vesma é uma peça delicada e sofisticada, ideal para realçar sua elegância em qualquer ocasião. Com um design em formato de gota, este acessório combina beleza e estilo, perfeito para quem busca um toque de sofisticação.
+
+                        Feito com materiais de alta qualidade, o Brinco Gota Vesma é leve e confortável, oferecendo um brilho especial que valoriza o rosto.</p>
+                    <p class="preco">R$ 112,00</p>
+                    <p class="promocao">Promoção: R$ 84,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls30" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Brinco ponto de luz Rommanel.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <!--<div class="carousel-item">
+                            <img src="imagensSite/Brinco ponto de luz Rommanel 2.jpeg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Brinco ponto de luz Rommanel 3.jpeg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>-->
+                    </div>
+                    <!-- Botões de navegação 
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls30" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls30" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>-->
+                </div>
+        
+                <div class="descricao">
+                    <h3>Brinco Ponto de Luz Rommanel</h3>
+                    <p>O Brinco Ponto de Luz Rommanel é um clássico indispensável para quem valoriza a elegância atemporal. Discreto e sofisticado, ele apresenta uma pedra brilhante cuidadosamente lapidada que reflete a luz de forma encantadora, proporcionando um toque sutil de glamour ao visual.
+
+                        Feito com a qualidade e durabilidade que são marcas registradas da Rommanel, este brinco é perfeito para uso diário ou para complementar looks mais elaborados, garantindo versatilidade e charme em qualquer ocasião.</p>
+                    <p class="preco">R$ 89,00</p>
+                    <p class="promocao">Promoção: R$ 60,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls31" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Brinco fé.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <!--<div class="carousel-item">
+                            <img src="produto1-img2.jpg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="produto1-img3.jpg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>-->
+                    </div>
+                    <!-- Botões de navegação -->
+                    <!--<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls31" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls31" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>-->
+                </div>
+        
+                <div class="descricao">
+                    <h3>Brinco Fé</h3>
+                    <p>O Brinco Fé é uma peça elegante e delicada, ideal para quem deseja carregar um símbolo de espiritualidade e esperança em todos os momentos. Com um design minimalista e sofisticado, ele combina perfeitamente com diferentes estilos e ocasiões, desde eventos especiais até o uso no dia a dia.</p>
+                    <p class="preco">R$ 50,00</p>
+                    <p class="promocao">Promoção: R$ 35,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+
+            
+
+
+        </section>
+        <!-- Outras Categorias Aqui -->
+    </main>
+
+    <!-- Imagem Expandidas -->
+    <div id="imagemExpandida" class="expanded-img" onclick="fecharImagem()">
+        <button class="close-btn" onclick="fecharImagem()">X</button>
+        <img id="imgExpandida" src="" alt="Imagem Expandida">
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Naty Jóias e Variedades</p>
+    </footer>
+</body>
+</html>

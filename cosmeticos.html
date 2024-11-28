@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naty Jóias e Variedades</title>
+    <!-- Link para o CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link para o CSS personalizado -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Script JS do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="imagensSite/fundonaty.png" alt="Logo Naty Jóias e Variedades" style="height: 50px;">
+                    Naty Jóias e Variedades
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <button class="btn btn-warning btn-carrinho" onclick="window.location.href='carrinho.html'">Ver Carrinho</button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Correntes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pulseiras.html">Pulseiras</a></li>
+                        <li class="nav-item"><a class="nav-link" href="brincos.html">Brincos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="anel.html">Anel</a></li>
+                        
+                        <li class="nav-item"><a class="nav-link" href="cosmeticos.html">Cosméticos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pingente.html">Pingentes</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mensagem ao Adicionar Produto -->
+    <div id="toast" class="toast">
+        Produto adicionado ao carrinho com sucesso!
+    </div>
+
+    <!-- Seção de Produtos -->
+    <main>
+        <section id="correntes" class="categoria">
+            <h2>Cosméticos</h2>
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Essencial feminino natura.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <!--<div class="carousel-item">
+                            <img src="produto1-img2.jpg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="produto1-img3.jpg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>-->
+                    </div>
+                    <!-- Botões de navegação 
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>-->
+                </div>
+        
+                <div class="descricao">
+                    <h3>Essencial Feminino Natura</h3>
+                    <p>Ideal para mulheres que valorizam sua essência e deixam sua marca por onde passam, Essencial Feminino é perfeito para ocasiões especiais ou para transformar o dia a dia em momentos inesquecíveis.</p>
+                    <p class="preco">R$ 249,00</p>
+                    <p class="promocao">Promoção: R$ 198,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Colonia humor meu primeiro amor.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <!--<div class="carousel-item">
+                            <img src="produto1-img2.jpg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="produto1-img3.jpg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>-->
+                    </div>
+                    <!-- Botões de navegação 
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>-->
+                </div>
+        
+                <div class="descricao">
+                    <h3>Colonia Humor Meu Primeiro Amor</h3>
+                    <p>Apaixone-se pelo aroma leve e divertido de Humor Meu Primeiro Amor, a fragrância que celebra os primeiros sorrisos, olhares e sentimentos que aquecem o coração. Com uma combinação irresistível de notas frutais e florais, este perfume é perfeito para quem gosta de levar a vida com leveza e romantismo.</p>
+                    <p class="preco">R$ 143,90</p>
+                    <p class="promocao">Promoção: R$ 120,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls3" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Perfume essencial feminino exclusivo floral.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <!--<div class="carousel-item">
+                            <img src="produto1-img2.jpg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="produto1-img3.jpg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>-->
+                    </div>
+                    <!-- Botões de navegação 
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>-->
+                </div>
+        
+                <div class="descricao">
+                    <h3>Perfume Essencial Feminino Exclusivo Floral</h3>
+                    <p>Revele sua essência com o Essencial Feminino Exclusivo Floral, uma fragrância sofisticada e inesquecível. Com um buquê floral exuberante, realçado por notas envolventes e um fundo amadeirado, este perfume é a escolha ideal para mulheres que valorizam sua autenticidade e elegância.</p>
+                    <p class="preco">R$ 207,92</p>
+                    <p class="promocao">Promoção: R$ 152,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls4" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Kit glamour secret Black colônia + hidratante corporal.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <!--<div class="carousel-item">
+                            <img src="produto1-img2.jpg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="produto1-img3.jpg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>-->
+                    </div>
+                    <!-- Botões de navegação 
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>-->
+                </div>
+        
+                <div class="descricao">
+                    <h3>Kit Glamour Secret Black Colônia + Hidratante Corporal</h3>
+                    <p>Descubra o mistério e a sofisticação com o Kit Glamour Secret Black, uma combinação perfeita para cuidar de si com estilo e elegância.
+
+                        Glamour Secret Black Colônia: Uma fragrância envolvente com um toque oriental e sensual, que mistura notas adocicadas e amadeiradas, ideal para destacar sua personalidade marcante em qualquer ocasião.
+                        Hidratante Corporal Glamour Secret Black: Com uma textura cremosa e fragrância prolongada, proporciona hidratação intensa, deixando sua pele macia, perfumada e irresistível.</p>
+                    <p class="preco">R$ 204,00</p>
+                    <p class="promocao">Promoção: R$ 160,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls5" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Sabonete natura todo dia manga rosa e água de coco.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <!--<div class="carousel-item">
+                            <img src="produto1-img2.jpg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="produto1-img3.jpg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>-->
+                    </div>
+                    <!-- Botões de navegação 
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls5" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls5" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>-->
+                </div>
+        
+                <div class="descricao">
+                    <h3>Sabonete Natura Todo Dia Manga Rosa e Água de Coco</h3>
+                    <p>Transforme seu banho em um momento de frescor e cuidado com o Sabonete Natura Tododia Manga Rosa e Água de Coco. Sua fórmula cremosa limpa delicadamente, enquanto hidrata e deixa a pele com um toque macio e aveludado.
+
+                        Com uma fragrância tropical irresistível, que combina o aroma doce e vibrante da manga rosa com a leveza refrescante da água de coco, este sabonete proporciona uma experiência sensorial única, revigorando corpo e mente.</p>
+                    <p class="preco">R$ 33,90</p>
+                    <p class="promocao">Promoção: R$ 28,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls6" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Colônia Egeo Cherry blast o boticário.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <!--<div class="carousel-item">
+                            <img src="produto1-img2.jpg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="produto1-img3.jpg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>-->
+                    </div>
+                    <!-- Botões de navegação 
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls6" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls6" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>-->
+                </div>
+        
+                <div class="descricao">
+                    <h3>Colônia Egeo Cherry Blast Oboticário</h3>
+                    <p>Explosão de doçura e atitude em cada borrifada! A Colônia Egeo Cherry Blast é a escolha perfeita para quem ama fragrâncias marcantes e cheias de personalidade. Com uma combinação envolvente de cereja, notas gourmand e um toque amadeirado, este perfume cria um equilíbrio delicioso entre o doce e o sofisticado.</p>
+                    <p class="preco">R$ 149,00</p>
+                    <p class="promocao">Promoção: R$ 134,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls7" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Kit Natura Todo Dia Algodão Sabonete + Hidratante.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <!--<div class="carousel-item">
+                            <img src="produto1-img2.jpg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="produto1-img3.jpg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>-->
+                    </div>
+                    <!-- Botões de navegação 
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls7" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls7" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>-->
+                </div>
+        
+                <div class="descricao">
+                    <h3>Kit Natura Todo Dia Algodão Sabonete + Hidratante</h3>
+                    <p>Cuide da sua pele com a suavidade e o conforto do Kit Natura Tododia Algodão, pensado para proporcionar hidratação intensa e uma limpeza delicada no dia a dia.
+
+                        Sabonete em Barra: Fórmula cremosa que limpa gentilmente, deixando a pele macia e com um toque suave, envolvida pela fragrância aconchegante do algodão.
+                        Hidratante Corporal Tododia Algodão: Com textura leve e de rápida absorção, oferece hidratação profunda por até 48 horas, restaurando a maciez e protegendo a pele contra o ressecamento.</p>
+                    <p class="preco">R$ 89,00</p>
+                    <p class="promocao">Promoção: R$ 58,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls8" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Desodorante Kaiak Natura oceano.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <!--<div class="carousel-item">
+                            <img src="produto1-img2.jpg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="produto1-img3.jpg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>-->
+                    </div>
+                    <!-- Botões de navegação 
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls8" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls8" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>-->
+                </div>
+        
+                <div class="descricao">
+                    <h3>Desodorante Kaiak Natura Oceano</h3>
+                    <p>Sinta a liberdade e a energia do mar com o Desodorante Kaiak Natura Oceano. Com uma fragrância refrescante e revigorante, ele traz notas cítricas e aquáticas que transmitem a sensação de frescor constante, como a brisa do oceano.
+
+                        Sua fórmula proporciona proteção eficaz contra o suor, garantindo conforto e bem-estar o dia todo, sem deixar resíduos. Ideal para homens que buscam uma fragrância vibrante e duradoura, Kaiak Oceano é a escolha perfeita para quem vive intensamente e quer estar sempre pronto para novas aventuras.</p>
+                    <p class="preco">R$ 26,90</p>
+                    <p class="promocao">Promoção: R$ 20,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+
+        </section>
+        <!-- Outras Categorias Aqui -->
+    </main>
+
+    <!-- Imagem Expandidas -->
+    <div id="imagemExpandida" class="expanded-img" onclick="fecharImagem()">
+        <button class="close-btn" onclick="fecharImagem()">X</button>
+        <img id="imgExpandida" src="" alt="Imagem Expandida">
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Naty Jóias e Variedades</p>
+    </footer>
+</body>
+</html>

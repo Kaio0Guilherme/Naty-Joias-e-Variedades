@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naty Jóias e Variedades</title>
+    <!-- Link para o CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link para o CSS personalizado -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Script JS do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="imagensSite/fundonaty.png" alt="Logo Naty Jóias e Variedades" style="height: 50px;">
+                    Naty Jóias e Variedades
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <button class="btn btn-warning btn-carrinho" onclick="window.location.href='carrinho.html'">Ver Carrinho</button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Correntes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pulseiras.html">Pulseiras</a></li>
+                        <li class="nav-item"><a class="nav-link" href="brincos.html">Brincos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="anel.html">Anel</a></li>
+                        
+                        <li class="nav-item"><a class="nav-link" href="cosmeticos.html">Cosméticos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pingente.html">Pingentes</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mensagem ao Adicionar Produto -->
+    <div id="toast" class="toast">
+        Produto adicionado ao carrinho com sucesso!
+    </div>
+
+    <!-- Seção de Produtos -->
+    <main>
+        <section id="correntes" class="categoria">
+            <h2>Pingentes</h2>
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Pingente vida Rommanel.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <!--<div class="carousel-item">
+                            <img src="produto1-img2.jpg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="produto1-img3.jpg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>-->
+                    </div>
+                    <!-- Botões de navegação 
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>-->
+                </div>
+        
+                <div class="descricao">
+                    <h3>Pingente Vida Rommanel</h3>
+                    <p>O Pingente Vida Rommanel é uma peça repleta de simbolismo e sofisticação, ideal para quem busca transmitir uma mensagem de força e renascimento. Com um design delicado e único, o pingente traz o símbolo da vida, representando energia, movimento e transformação, tornando-o um acessório cheio de significado.</p>
+                    <p class="preco">R$ 86,00</p>
+                    <p class="promocao">Promoção: R$ 52,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Pingente minha menina Rommanel.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <!--<div class="carousel-item">
+                            <img src="produto1-img2.jpg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="produto1-img3.jpg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>-->
+                    </div>
+                    <!-- Botões de navegação 
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>-->
+                </div>
+        
+                <div class="descricao">
+                    <h3>Pingente Minha Menina Rommanel</h3>
+                    <p>O Pingente Minha Menina Rommanel é uma peça encantadora e cheia de significado, ideal para quem deseja expressar carinho e afeto de forma sofisticada. Com o delicado design que faz alusão a uma figura feminina, este pingente simboliza proteção, amor e conexão, tornando-o um presente perfeito para mães, filhas ou qualquer pessoa especial em sua vida.</p>
+                    <p class="preco">R$ 118,00</p>
+                    <p class="promocao">Promoção: R$ 98,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls3" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Pingente love Rommanel.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <!--<div class="carousel-item">
+                            <img src="produto1-img2.jpg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="produto1-img3.jpg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>-->
+                    </div>
+                    <!-- Botões de navegação 
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>-->
+                </div>
+        
+                <div class="descricao">
+                    <h3>Pingente Love Rommanel</h3>
+                    <p>O Pingente Love Rommanel é uma peça cheia de significado e delicadeza, ideal para quem deseja expressar amor e carinho de maneira sofisticada. Com o design da palavra "Love", o pingente traz um toque romântico e elegante ao visual, sendo perfeito para complementar colares ou até mesmo como peça única para destacar o seu estilo.</p>
+                    <p class="preco">R$ 188,50</p>
+                    <p class="promocao">Promoção: R$ 150,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls4" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Pingente de luz Rommanel.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <!--<div class="carousel-item">
+                            <img src="produto1-img2.jpg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="produto1-img3.jpg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>-->
+                    </div>
+                    <!-- Botões de navegação 
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>-->
+                </div>
+        
+                <div class="descricao">
+                    <h3>Pingente de Luz Rommanel</h3>
+                    <p>O Pingente de Luz Rommanel é uma peça sofisticada e cheia de significado, projetada para irradiar brilho e elegância. Com um design delicado e encantador, o pingente simboliza a luz, a energia positiva e a clareza, sendo perfeito para quem busca um acessório que transmita beleza e inspiração.</p>
+                    <p class="preco">R$ 50,00</p>
+                    <p class="promocao">Promoção: R$ 35,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+        </section>
+        <!-- Outras Categorias Aqui -->
+    </main>
+
+    <!-- Imagem Expandidas -->
+    <div id="imagemExpandida" class="expanded-img" onclick="fecharImagem()">
+        <button class="close-btn" onclick="fecharImagem()">X</button>
+        <img id="imgExpandida" src="" alt="Imagem Expandida">
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Naty Jóias e Variedades</p>
+    </footer>
+</body>
+</html>

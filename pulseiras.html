@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naty Jóias e Variedades</title>
+    <!-- Link para o CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link para o CSS personalizado -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Script JS do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="imagensSite/fundonaty.png" alt="Logo Naty Jóias e Variedades" style="height: 50px;">
+                    Naty Jóias e Variedades
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <button class="btn btn-warning btn-carrinho" onclick="window.location.href='carrinho.html'">Ver Carrinho</button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Correntes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pulseiras.html">Pulseiras</a></li>
+                        <li class="nav-item"><a class="nav-link" href="brincos.html">Brincos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="anel.html">Anel</a></li>
+                        
+                        <li class="nav-item"><a class="nav-link" href="cosmeticos.html">Cosméticos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pingente.html">Pingentes</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mensagem ao Adicionar Produto -->
+    <div id="toast" class="toast">
+        Produto adicionado ao carrinho com sucesso!
+    </div>
+
+    <!-- Seção de Produtos -->
+    <main>
+        <section id="correntes" class="categoria">
+            <h2>Pulseiras</h2>
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Kit pulseira Alabhama branco.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Kit pulseira Alabhama branco 2.jpeg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Kit pulseira Alabhama branco 3.jpeg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>
+                    </div>
+                    <!-- Botões de navegação -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        
+                <div class="descricao">
+                    <h3>Pulseira Alabhama Branco</h3>
+                    <p>A Pulseira Alabama Branco é um acessório elegante e versátil, perfeito para quem busca um toque de sofisticação com um design clean e moderno. Com detalhes cuidadosamente elaborados, essa pulseira é ideal para complementar diferentes estilos, desde os mais casuais até os mais refinados.
+
+                        Sua tonalidade branca confere leveza e frescor, enquanto os materiais de alta qualidade garantem resistência e conforto durante o uso. A pulseira Alabama Branco é perfeita para uso diário ou ocasiões especiais, destacando-se como uma peça coringa no seu porta-joias.</p>
+                    <p class="preco">R$ 25,00</p>
+                    <p class="promocao">Promoção: R$ 18,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Pulseira masculina Rommanel.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Pulseira masculina Rommanel 2.jpeg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Pulseira masculina Rommanel 3.jpeg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>
+                    </div>
+                    <!-- Botões de navegação -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        
+                <div class="descricao">
+                    <h3>Pulseira Masculina Rommanel</h3>
+                    <p>A Pulseira Masculina Rommanel é a escolha ideal para o homem moderno que busca sofisticação e estilo em seus acessórios. Com um design robusto e elegante, esta pulseira combina perfeitamente com o estilo masculino, oferecendo um toque de classe e personalidade ao visual.
+
+                        Produzida com a qualidade e durabilidade características da Rommanel, a pulseira é confeccionada em materiais de alta resistência e acabamento impecável, garantindo conforto e longa durabilidade. Seu design versátil, que pode incluir elementos como correntes, detalhes em couro ou metais, a torna perfeita para usar em diversas ocasiões, desde o dia a dia até eventos mais formais.</p>
+                    <p class="preco">R$ 680,00</p>
+                    <p class="promocao">Promoção: R$ 538,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <!-- Carrossel de Imagens do Produto -->
+                <div id="carouselExampleControls3" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagensSite/Pulseira masculina inox.jpeg" class="d-block w-100 produto-img" alt="Imagem 1" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Pulseira masculina inox.jpeg" class="d-block w-100 produto-img" alt="Imagem 2" onclick="expandirImagem(this)">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagensSite/Pulseira masculina inox.jpeg" class="d-block w-100 produto-img" alt="Imagem 3" onclick="expandirImagem(this)">
+                        </div>
+                    </div>
+                    <!-- Botões de navegação -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        
+                <div class="descricao">
+                    <h3>Pulseira Masculina Prata 925</h3>
+                    <p>A Pulseira Masculina Prata 925 é a escolha perfeita para homens que buscam elegância e durabilidade em seus acessórios. Feita em prata 925 de alta qualidade, essa pulseira exibe um design robusto e sofisticado, ideal para complementar o estilo masculino com um toque de classe e modernidade.
+
+                        Com acabamento impecável e resistência, a Pulseira Masculina Prata 925 combina versatilidade e estilo, sendo ideal para o uso diário ou para ocasiões especiais. Sua cor e brilho da prata 925 adicionam um toque de sofisticação, enquanto o design atemporal garante que a peça seja sempre uma escolha elegante.</p>
+                    <p class="preco">R$ 96,00</p>
+                    <p class="promocao">Promoção: R$ 55,00</p>
+                    <button onclick="adicionarProduto(this)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+
+        </section>
+        <!-- Outras Categorias Aqui -->
+    </main>
+
+    <!-- Imagem Expandidas -->
+    <div id="imagemExpandida" class="expanded-img" onclick="fecharImagem()">
+        <button class="close-btn" onclick="fecharImagem()">X</button>
+        <img id="imgExpandida" src="" alt="Imagem Expandida">
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Naty Jóias e Variedades</p>
+    </footer>
+</body>
+</html>
